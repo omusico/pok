@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<!-- 
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+ -->
+	
+	<!-- 用户管理 -->
+	<bean id="userManageService" parent="baseTransactionProxy">
+		<property name="target" ref="userManageServiceTarget"/>
+	</bean>
+	<bean id="userManageServiceTarget"	class="com.onmyway.ssc.manage.service.UserManageServiceImpl">
+		<property name="userManageDao" ref="userManageDao"/>		
+	</bean>	
+	
+	<bean id="userManageDao" class="com.onmyway.ssc.manage.dao.UserManageDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>		 
+ 	
+</beans>

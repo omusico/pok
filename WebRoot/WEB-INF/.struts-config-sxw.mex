@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/sxwManage.do" location="50,750" dimension="316,84" />
+  <StrutsActivity path="/sxwIssueTime.do" location="50,1150" dimension="322,84" />
+  <StrutsActivity path="/sxwPublicInfo.do" location="950,550" dimension="328,84" />
+  <StrutsActivity path="/sxwPlay.do" location="650,1150" dimension="292,84" />
+  <StrutsActivity path="/jsp/sxw/isstime.jsp" location="50,450" dimension="160,48" />
+  <StrutsActivity path="/../jsp/sxw/public/sxw_zj_num_show.jsp" location="1550,50" dimension="268,48" />
+  <StrutsActivity path="/../jsp/sxw/public/sxw_zj_user_info.jsp" location="650,1350" dimension="274,48" />
+  <StrutsActivity path="/../WEB-INF/usermanage/sxw/sxw_manage.jsp" location="1550,1050" dimension="286,48" />
+  <StrutsActivity path="/../jsp/sxw/isstime.jsp" location="350,450" dimension="178,48" />
+  <StrutsActivity path="/../jsp/sxw/sxw_win_movie.jsp" location="350,150" dimension="214,48" />
+  <StrutsActivity path="/../jsp/public/show_sxw_win_num_list.jsp" location="1250,1150" dimension="280,48" />
+  <StrutsActivity path="/../jsp/sxw/multiplay/sxw_zhuitou.jsp" location="650,150" dimension="262,48" />
+  <StrutsActivity path="/../jsp/sxw/user/sxw_user_zj_list.jsp" location="1850,1350" dimension="262,48" />
+  <StrutsActivity path="/../jsp/sxw/user/sxw_user_tz_list.jsp" location="1250,1350" dimension="262,48" />
+  <StrutsActivity path="/../jsp/public/sxw_zj_zoushi_detail.jsp" location="50,1350" dimension="274,48" />
+  <StrutsActivity path="/../jsp/sxw/index_sxw.jsp" location="1250,150" dimension="190,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuanwu_play_dantuo.jsp" location="1550,150" dimension="274,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuaner_play_fushi.jsp" location="650,450" dimension="268,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuan8_play_dantuo.jsp" location="1250,1550" dimension="268,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuanwu_play_fushi.jsp" location="1850,550" dimension="268,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuan6_play_dantuo.jsp" location="1850,1550" dimension="268,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuansan_play_fushi.jsp" location="1850,850" dimension="274,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuaner_play_zhiqian2.jsp" location="50,1450" dimension="286,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuan7_play_fushi.jsp" location="2150,450" dimension="262,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuan6_play_fushi.jsp" location="2150,650" dimension="262,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuaner_play_zuqian2.jsp" location="650,1450" dimension="280,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuansan_play_dantuo.jsp" location="1250,1250" dimension="280,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuan8_play_fushi.jsp" location="2150,1050" dimension="262,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuansi_play_fushi.jsp" location="1850,750" dimension="268,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuansan_play_zhiqian3.jsp" location="50,1550" dimension="292,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuan7_play_dantuo.jsp" location="50,1750" dimension="268,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuansi_play_dantuo.jsp" location="1850,950" dimension="274,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuanyi_play_fushi.jsp" location="1850,1150" dimension="268,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuansan_play_zuqian3.jsp" location="650,1550" dimension="286,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuaner_play_dantuo.jsp" location="1850,1250" dimension="274,48" />
+  <StrutsActivity path="/../jsp/public/win_num_show.jsp" location="675,294" dimension="226,48" />
+  <StrutsActivity path="/../jsp/sxw/play/sixing_play_danshi.jsp" location="1550,650" dimension="274,48" />
+  <StrutsActivity path="/../jsp/sxw/play/sanxing_zuxuan_play_baodan.jsp" location="650,750" dimension="322,48" />
+  <StrutsActivity path="/../jsp/sxw/play/sanxing_zhixuan_play_zuhefushi.jsp" location="1250,750" dimension="346,48" />
+  <StrutsActivity path="/../jsp/sxw/play/sanxing_zhixuan_play_fushi.jsp" location="650,850" dimension="322,48" />
+  <StrutsActivity path="/../jsp/sxw/play/sixing_play_fushi.jsp" location="1250,850" dimension="268,48" />
+  <StrutsActivity path="/../jsp/sxw/play/wuxing_play_fushi.jsp" location="50,950" dimension="268,48" />
+  <StrutsActivity path="/../jsp/sxw/play/sanxing_zuxuan_play_zu3.jsp" location="650,950" dimension="304,48" />
+  <StrutsActivity path="/../jsp/sxw/play/wuxing_play_danshi.jsp" location="1250,950" dimension="274,48" />
+  <StrutsActivity path="/../jsp/sxw/play/wuxing_tx_play.jsp" location="50,1050" dimension="250,48" />
+  <StrutsActivity path="/../jsp/sxw/play/sanxing_zuxuan_play_zu6.jsp" location="350,1050" dimension="304,48" />
+  <StrutsActivity path="/../jsp/sxw/play/sanxing_zhixuan_play_danshi.jsp" location="950,1050" dimension="328,48" />
+  <StrutsActivity path="/../jsp/sxw/ssc_win_movie.jsp" location="1250,450" dimension="214,48" />
+  <StrutsActivity path="/../jsp/sxw/multiplay/ssc_zhuitou.jsp" location="1550,450" dimension="262,48" />
+  <StrutsActivity path="/../jsp/sxw/index_ssc.jsp" location="1550,550" dimension="190,48" />
+  <StrutsActivity path="/jsp/ssc/isstime.jsp" location="0,571" dimension="160,48" />
+  <StrutsActivity path="/../WEB-INF/usermanage/ssc/ssc_manage.jsp" location="260,571" dimension="286,48" />
+  <StrutsActivity path="/../jsp/ssc/isstime.jsp" location="663,571" dimension="178,48" />
+  <StrutsActivity path="/../jsp/ssc/ssc_win_movie.jsp" location="0,294" dimension="214,48" />
+  <StrutsActivity path="/../jsp/ssc/multiplay/ssc_zhuitou.jsp" location="314,294" dimension="262,48" />
+  <StrutsActivity path="/../jsp/ssc/index_ssc.jsp" location="1001,294" dimension="190,48" />
+  <StrutsActivity path="/../jsp/ssc/play/sixing_play_danshi.jsp" location="1291,294" dimension="274,48" />
+  <StrutsActivity path="/../jsp/ssc/play/sanxing_zuxuan_play_baodan.jsp" location="1665,294" dimension="322,48" />
+  <StrutsActivity path="/../jsp/ssc/play/sanxing_zhixuan_play_zuhefushi.jsp" location="2088,294" dimension="346,48" />
+  <StrutsActivity path="/../jsp/ssc/play/sanxing_zhixuan_play_fushi.jsp" location="2534,294" dimension="322,48" />
+  <StrutsActivity path="/../jsp/ssc/play/sixing_play_fushi.jsp" location="2956,294" dimension="268,48" />
+  <StrutsActivity path="/../jsp/ssc/play/wuxing_play_fushi.jsp" location="3324,294" dimension="268,48" />
+  <StrutsActivity path="/../jsp/ssc/play/sanxing_zuxuan_play_zu3.jsp" location="3692,294" dimension="304,48" />
+  <StrutsActivity path="/../jsp/ssc/play/wuxing_play_danshi.jsp" location="4096,294" dimension="274,48" />
+  <StrutsActivity path="/../jsp/ssc/play/wuxing_tx_play.jsp" location="4470,294" dimension="250,48" />
+  <StrutsActivity path="/../jsp/ssc/play/sanxing_zuxuan_play_zu6.jsp" location="4820,294" dimension="304,48" />
+  <StrutsActivity path="/../jsp/ssc/play/sanxing_zhixuan_play_danshi.jsp" location="5224,294" dimension="328,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuaner_play_zhiqian3.jsp" location="1250,1450" dimension="286,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuaner_play_zuqian3.jsp" location="1850,1450" dimension="280,48" />
+  <StrutsActivity path="/../jsp/sxw/play/xuansan_play_zuqian3_dantuo.jsp" />
+  <StrutsActivity path="/../jsp/sxw/play/xuaner_play_zuqian2_dantuo.jsp" />
+  <StrutsTransition id="/sxwPlay.do,xuan1fushi,/../jsp/sxw/play/xuanyi_play_fushi.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPublicInfo.do,showZjNumList,/../jsp/public/show_sxw_win_num_list.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1278,613" />
+      <AbsolutePoint location="3459,613" />
+      <AbsolutePoint location="3459,1174" />
+      <AbsolutePoint location="1530,1174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan2zuqian2,/../jsp/sxw/play/xuaner_play_zuqian2.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1222" />
+      <AbsolutePoint location="597,1222" />
+      <AbsolutePoint location="597,1474" />
+      <AbsolutePoint location="650,1474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan3zuqian3dantuo,/../jsp/sxw/play/xuansan_play_zuqian3_dantuo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwManage.do,success,/../WEB-INF/usermanage/sxw/sxw_manage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="208,834" />
+      <AbsolutePoint location="208,913" />
+      <AbsolutePoint location="1717,913" />
+      <AbsolutePoint location="1717,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan2zhiqian2,/../jsp/sxw/play/xuaner_play_zhiqian2.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1192" />
+      <AbsolutePoint location="507,1192" />
+      <AbsolutePoint location="507,1474" />
+      <AbsolutePoint location="336,1474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan8dantuo,/../jsp/sxw/play/xuan8_play_dantuo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan7fushi,/../jsp/sxw/play/xuan7_play_fushi.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan2dantuo,/../jsp/sxw/play/xuaner_play_dantuo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan3zuqian3,/../jsp/sxw/play/xuansan_play_zuqian3.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="942,1183" />
+      <AbsolutePoint location="1085,1183" />
+      <AbsolutePoint location="1085,1574" />
+      <AbsolutePoint location="936,1574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan2zuqian2dantuo,/../jsp/sxw/play/xuaner_play_zuqian2_dantuo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwManage.do,showZjUserInfo,/../jsp/sxw/public/sxw_zj_user_info.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="208,792" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan5fushi,/../jsp/sxw/play/xuanwu_play_fushi.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan6dantuo,/../jsp/sxw/play/xuan6_play_dantuo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan4fushi,/../jsp/sxw/play/xuansi_play_fushi.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPublicInfo.do,showZjZoushi,/../jsp/public/sxw_zj_zoushi_detail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,556" />
+      <AbsolutePoint location="-60,556" />
+      <AbsolutePoint location="-60,1374" />
+      <AbsolutePoint location="50,1374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwIssueTime.do,show,/../jsp/sxw/isstime.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1192" />
+      <AbsolutePoint location="-150,1192" />
+      <AbsolutePoint location="-150,513" />
+      <AbsolutePoint location="439,513" />
+      <AbsolutePoint location="439,498" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan2fushi,/../jsp/sxw/play/xuaner_play_fushi.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,show,/../jsp/sxw/index_sxw.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan3fushi,/../jsp/sxw/play/xuansan_play_fushi.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPublicInfo.do,viewUserTzInfo,/../jsp/sxw/user/sxw_user_tz_list.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1114,634" />
+      <AbsolutePoint location="1114,1013" />
+      <AbsolutePoint location="2289,1013" />
+      <AbsolutePoint location="2289,1374" />
+      <AbsolutePoint location="1512,1374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan6fushi,/../jsp/sxw/play/xuan6_play_fushi.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwManage.do,showZjNum,/../jsp/sxw/public/sxw_zj_num_show.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="208,792" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPublicInfo.do,sxwIndex,/../jsp/sxw/index_sxw.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1114,592" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwManage.do,showConfigInfo,/jsp/sxw/isstime.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="195,750" />
+      <AbsolutePoint location="195,498" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan3dantuo,/../jsp/sxw/play/xuansan_play_dantuo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan4dantuo,/../jsp/sxw/play/xuansi_play_dantuo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPublicInfo.do,showWinMovie,/../jsp/sxw/sxw_win_movie.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1114,592" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan8fushi,/../jsp/sxw/play/xuan8_play_fushi.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPublicInfo.do,viewUserZjInfo,/../jsp/sxw/user/sxw_user_zj_list.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1114,592" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan3zhiqian3,/../jsp/sxw/play/xuansan_play_zhiqian3.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1162" />
+      <AbsolutePoint location="417,1162" />
+      <AbsolutePoint location="417,1574" />
+      <AbsolutePoint location="342,1574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPublicInfo.do,showZhuitouPage,/../jsp/sxw/multiplay/sxw_zhuitou.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1114,592" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan5dantuo,/../jsp/sxw/play/xuanwu_play_dantuo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sxwPlay.do,xuan7dantuo,/../jsp/sxw/play/xuan7_play_dantuo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="796,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

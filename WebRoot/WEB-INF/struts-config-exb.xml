@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans>
+  <form-bean name="exbManageForm" 
+        	type="org.apache.struts.validator.LazyValidatorForm" />
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+  	<!-- 快乐十分 20选8-后台管理 -->
+  	<action name="exbManageForm" scope="request" path="/exbManage"
+			type="com.onmyway.exb.manage.action.ExbManageAction"
+			parameter="method"
+			validate="false">
+			<forward name="success"
+				path="/../WEB-INF/usermanage/exb/exb_manage.jsp" />
+			<forward name="showConfigInfo" path="/jsp/exb/isstime.jsp"/>	
+			<forward name="showZjUserInfo" path="/../jsp/exb/public/exb_zj_user_info.jsp"/>			
+			<forward name="showZjNum" path="/../jsp/exb/public/exb_zj_num_show.jsp"/>				
+	</action>
+	<!-- 快乐十分 20选8-开奖时间展示 -->
+  	<action name="exbIssueTimeForm" scope="request" path="/exbIssueTime"
+			type="com.onmyway.exb.play.action.ExbIssueTimeAction"
+			parameter="method"
+			validate="false">
+			<forward name="show" path="/../jsp/exb/isstime.jsp"/>			
+	</action>
+	
+	
+	<!-- 快乐十分 20选8-首页-中奖信息-追投信息展示-开奖动画-公用信息 -->
+  	<action name="exbPublicInfo" scope="request" path="/exbPublicInfo"
+			type="com.onmyway.exb.play.action.ExbPublicInfoAction"
+			parameter="method"
+			validate="false">		
+			<forward name="exbIndex" path="/../jsp/exb/index_exb.jsp"/>			
+			<forward name="showZjNumList" path="/../jsp/public/show_exb_win_num_list.jsp"/>			
+			<forward name="showZhuitouPage" path="/../jsp/exb/multiplay/exb_zhuitou.jsp"/>			
+			<forward name="showWinMovie" path="/../jsp/exb/exb_win_movie.jsp"/>	
+			<forward name="showZjZoushi" path="/../jsp/public/exb_zj_zoushi_detail.jsp"/>			
+			<forward name="viewUserTzInfo" path="/../jsp/exb/user/exb_user_tz_list.jsp"/>			
+			<forward name="viewUserZjInfo" path="/../jsp/exb/user/exb_user_zj_list.jsp"/>			
+	</action>
+	
+	<!-- 快乐十分 20选8-玩法 -->
+  	<action name="exbPlay" scope="request" path="/exbPlay"
+			type="com.onmyway.exb.play.action.ExbPlayAction"
+			parameter="method"
+			validate="false">
+			<forward name="show" path="/../jsp/exb/index_exb.jsp"/>			
+			<forward name="xuan1shutou" path="/../jsp/exb/play/xuan1_play_shutou.jsp"/>			
+			<forward name="xuan1hongtou" path="/../jsp/exb/play/xuan1_play_hongtou.jsp"/>			
+			
+			<forward name="xuan2renxuan" path="/../jsp/exb/play/xuan2_play_renxuan.jsp"/>			
+			<forward name="xuan2renxuandantuo" path="/../jsp/exb/play/xuan2_play_dantuo.jsp"/>			
+			<forward name="xuan2lianzhi" path="/../jsp/exb/play/xuan2_play_lianzhi.jsp"/>			
+			<forward name="xuan2lianzu" path="/../jsp/exb/play/xuan2_play_lianzu.jsp"/>	
+			<forward name="xuan2lianzudantuo" path="/../jsp/exb/play/xuan2_play_lianzu_dantuo.jsp"/>	
+					
+			<forward name="xuan3renxuan" path="/../jsp/exb/play/xuan3_play_renxuan.jsp"/>			
+			<forward name="xuan3renxuandantuo" path="/../jsp/exb/play/xuan3_play_dantuo.jsp"/>	
+			<forward name="xuan3qianzhi" path="/../jsp/exb/play/xuan3_play_qianzhi.jsp"/>	
+			<forward name="xuan3qianzu" path="/../jsp/exb/play/xuan3_play_qianzu.jsp"/>	
+			<forward name="xuan3qianzudantuo" path="/../jsp/exb/play/xuan3_play_qianzu_dantuo.jsp"/>	
+
+			<forward name="xuan4renxuan" path="/../jsp/exb/play/xuan4_play_renxuan.jsp"/>			
+			<forward name="xuan4dantuo" path="/../jsp/exb/play/xuan4_play_dantuo.jsp"/>			
+			<forward name="xuan5renxuan" path="/../jsp/exb/play/xuan5_play_renxuan.jsp"/>			
+			<forward name="xuan5dantuo" path="/../jsp/exb/play/xuan5_play_dantuo.jsp"/>	
+			 	
+	</action>
+  </action-mappings>
+  <message-resources parameter="ApplicationResources.properties" />
+</struts-config>
+

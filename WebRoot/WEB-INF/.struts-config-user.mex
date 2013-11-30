@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/jsp/ssc/isstime.jsp" location="0,461" dimension="160,48" />
+  <StrutsActivity path="/../WEB-INF/usermanage/ssc/ssc_manage.jsp" location="260,461" dimension="286,48" />
+  <StrutsActivity path="/../jsp/ssc/isstime.jsp" location="72,738" dimension="178,48" />
+  <StrutsActivity path="/../jsp/ssc/ssc_win_movie.jsp" location="0,184" dimension="214,48" />
+  <StrutsActivity path="/../jsp/ssc/multiplay/ssc_zhuitou.jsp" location="314,184" dimension="262,48" />
+  <StrutsActivity path="/../jsp/ssc/index_ssc.jsp" location="1002,184" dimension="190,48" />
+  <StrutsActivity path="/../jsp/public/win_num_show.jsp" location="676,184" dimension="226,48" />
+  <StrutsActivity path="/../jsp/ssc/play/wuxing_tx_play.jsp" location="1292,184" dimension="250,48" />
+  <StrutsActivity path="/userInfo.do" location="650,350" dimension="316,84" />
+  <StrutsTransition id="/sscPublicInfo.do,sscIndex,/../jsp/ssc/index_ssc.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="740,84" />
+      <AbsolutePoint location="740,119" />
+      <AbsolutePoint location="1049,119" />
+      <AbsolutePoint location="1049,184" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sscPublicInfo.do,showZhuitouPage,/../jsp/ssc/multiplay/ssc_zhuitou.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="576,84" />
+      <AbsolutePoint location="576,149" />
+      <AbsolutePoint location="445,149" />
+      <AbsolutePoint location="445,184" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sscWxtx.do,show,/../jsp/ssc/index_ssc.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1213,84" />
+      <AbsolutePoint location="1213,119" />
+      <AbsolutePoint location="1144,119" />
+      <AbsolutePoint location="1144,184" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sscPublicInfo.do,showWinMovie,/../jsp/ssc/ssc_win_movie.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="494,84" />
+      <AbsolutePoint location="494,119" />
+      <AbsolutePoint location="107,119" />
+      <AbsolutePoint location="107,184" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sscPublicInfo.do,showWinNum,/../jsp/public/win_num_show.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="658,84" />
+      <AbsolutePoint location="658,149" />
+      <AbsolutePoint location="789,149" />
+      <AbsolutePoint location="789,184" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sscManage.do,success,/../WEB-INF/usermanage/ssc/ssc_manage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="320,361" />
+      <AbsolutePoint location="320,411" />
+      <AbsolutePoint location="403,411" />
+      <AbsolutePoint location="403,461" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userInfo.do,showConfigInfo,/jsp/ssc/isstime.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,392" />
+      <AbsolutePoint location="80,392" />
+      <AbsolutePoint location="80,461" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sscWxtx.do,showWxtxTouzhu,/../jsp/ssc/play/wuxing_tx_play.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1359,84" />
+      <AbsolutePoint location="1359,119" />
+      <AbsolutePoint location="1417,119" />
+      <AbsolutePoint location="1417,184" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sscManage.do,showConfigInfo,/jsp/ssc/isstime.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="162,361" />
+      <AbsolutePoint location="162,411" />
+      <AbsolutePoint location="80,411" />
+      <AbsolutePoint location="80,461" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userInfo.do,success,/../WEB-INF/usermanage/ssc/ssc_manage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,422" />
+      <AbsolutePoint location="403,422" />
+      <AbsolutePoint location="403,461" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sscIssueTime.do,show,/../jsp/ssc/isstime.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="161,638" />
+      <AbsolutePoint location="161,738" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

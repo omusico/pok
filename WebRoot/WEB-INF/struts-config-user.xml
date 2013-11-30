@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans>
+  <form-bean name="userInfoForm" 
+        	type="org.apache.struts.validator.LazyValidatorForm" />
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+  	<!-- 用户管理 -->
+  	<action name="userInfoForm" scope="request" path="/userInfo"
+			type="com.onmyway.ssc.manage.action.UserManageAction"
+			parameter="method"
+			validate="false">
+			<forward name="success"
+				path="/../WEB-INF/usermanage/ssc/ssc_manage.jsp" />		
+	</action>
+	
+  </action-mappings>
+  <message-resources parameter="ApplicationResources.properties" />
+</struts-config>
+

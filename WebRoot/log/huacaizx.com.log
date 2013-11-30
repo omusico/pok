@@ -1,0 +1,368 @@
+2013-05-27 20:35:12 [org.springframework.web.context.ContextLoader]:INFO - Root WebApplicationContext: initialization started
+2013-05-27 20:35:12 [org.apache.catalina.core.ContainerBase.[Catalina].[ljy].[/]]:INFO - Loading Spring root WebApplicationContext
+2013-05-27 20:35:12 [org.springframework.core.CollectionFactory]:INFO - JDK 1.4+ collections available
+2013-05-27 20:35:12 [org.springframework.core.CollectionFactory]:INFO - Commons Collections 3.x available
+2013-05-27 20:35:12 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:INFO - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2013-05-27 20:35:12 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:INFO - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext-ssc.xml]
+2013-05-27 20:35:12 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:INFO - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext-user.xml]
+2013-05-27 20:35:13 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:INFO - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext-sxw.xml]
+2013-05-27 20:35:13 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]:INFO - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext-exb.xml]
+2013-05-27 20:35:13 [org.springframework.web.context.support.XmlWebApplicationContext]:INFO - Bean factory for application context [Root WebApplicationContext]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [sessionFactory,transactionManager,baseTransactionProxy,hibernateInterceptor,HDAO,HDAOTarget,SpringContextUtil,dwrBean,sscManageService,sscManageServiceTarget,sscNumConfigDao,sscBaseInfoConfigDao,sscMoneyLimitDao,sscIssuePublicService,sscIssuePublicServiceTarget,sscTzInfoService,sscTzInfoServiceTarget,sscTzInfoDao,sscTzDetailDao,sscZjService,sscZjInfoDao,sscLimitService,sscCommonTool,sscLimitInfoInit,userManageService,userManageServiceTarget,userManageDao,sxwManageService,sxwManageServiceTarget,sxwNumConfigDao,sxwBaseInfoConfigDao,sxwMoneyLimitDao,sxwIssuePublicService,sxwIssuePublicServiceTarget,sxwTzInfoService,sxwTzInfoServiceTarget,sxwTzInfoDao,sxwTzDetailDao,sxwZjInfoDao,sxwLimitService,sxwCommonTool,sxwLimitInfoInit,exbManageService,exbManageServiceTarget,exbNumConfigDao,exbBaseInfoConfigDao,exbMoneyLimitDao,exbIssuePublicService,exbIssuePublicServiceTarget,exbTzInfoService,exbTzInfoServiceTarget,exbTzInfoDao,exbTzDetailDao,exbZjInfoDao,exbLimitService,exbCommonTool,exbLimitInfoInit]; root of BeanFactory hierarchy
+2013-05-27 20:35:13 [org.springframework.web.context.support.XmlWebApplicationContext]:INFO - 57 beans defined in application context [Root WebApplicationContext]
+2013-05-27 20:35:15 [org.springframework.web.context.support.XmlWebApplicationContext]:INFO - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@1bfd53d]
+2013-05-27 20:35:15 [org.springframework.web.context.support.XmlWebApplicationContext]:INFO - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@9fa12f]
+2013-05-27 20:35:15 [org.springframework.ui.context.support.UiApplicationContextUtils]:INFO - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@1c68b20]
+2013-05-27 20:35:15 [org.springframework.beans.factory.support.DefaultListableBeanFactory]:INFO - Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [sessionFactory,transactionManager,baseTransactionProxy,hibernateInterceptor,HDAO,HDAOTarget,SpringContextUtil,dwrBean,sscManageService,sscManageServiceTarget,sscNumConfigDao,sscBaseInfoConfigDao,sscMoneyLimitDao,sscIssuePublicService,sscIssuePublicServiceTarget,sscTzInfoService,sscTzInfoServiceTarget,sscTzInfoDao,sscTzDetailDao,sscZjService,sscZjInfoDao,sscLimitService,sscCommonTool,sscLimitInfoInit,userManageService,userManageServiceTarget,userManageDao,sxwManageService,sxwManageServiceTarget,sxwNumConfigDao,sxwBaseInfoConfigDao,sxwMoneyLimitDao,sxwIssuePublicService,sxwIssuePublicServiceTarget,sxwTzInfoService,sxwTzInfoServiceTarget,sxwTzInfoDao,sxwTzDetailDao,sxwZjInfoDao,sxwLimitService,sxwCommonTool,sxwLimitInfoInit,exbManageService,exbManageServiceTarget,exbNumConfigDao,exbBaseInfoConfigDao,exbMoneyLimitDao,exbIssuePublicService,exbIssuePublicServiceTarget,exbTzInfoService,exbTzInfoServiceTarget,exbTzInfoDao,exbTzDetailDao,exbZjInfoDao,exbLimitService,exbCommonTool,exbLimitInfoInit]; root of BeanFactory hierarchy]
+2013-05-27 20:35:15 [org.hibernate.cfg.Environment]:INFO - Hibernate 3.2.3
+2013-05-27 20:35:15 [org.hibernate.cfg.Environment]:INFO - hibernate.properties not found
+2013-05-27 20:35:15 [org.hibernate.cfg.Environment]:INFO - Bytecode provider name : cglib
+2013-05-27 20:35:15 [org.hibernate.cfg.Environment]:INFO - using JDK 1.4 java.sql.Timestamp handling
+2013-05-27 20:35:15 [org.hibernate.cfg.Configuration]:INFO - configuring from url: file:/D:/workspace/poker/WebRoot/WEB-INF/classes/hibernate.cfg.xml
+2013-05-27 20:35:15 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/ssc/manage/model/SscZjNumConfig.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.ssc.manage.model.SscZjNumConfig -> ssc_zj_num_config
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/ssc/manage/model/SscBaseInfoConfig.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.ssc.manage.model.SscBaseInfoConfig -> ssc_base_info_config
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/ssc/play/model/SscTzInfo.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.ssc.play.model.SscTzInfo -> ssc_tz_info
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/ssc/manage/model/UserInfo.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.ssc.manage.model.UserInfo -> lotteryuser
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/ssc/manage/model/SscMoneyAndLimit.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.ssc.manage.model.SscMoneyAndLimit -> ssc_money_and_limit
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/ssc/play/model/SscTzDetail.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.ssc.play.model.SscTzDetail -> ssc_tz_detail
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/ssc/manage/model/SscZjInfo.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.ssc.manage.model.SscZjInfo -> ssc_zj_info
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/sxw/manage/model/SxwZjNumConfig.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.sxw.manage.model.SxwZjNumConfig -> sxw_zj_num_config
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/sxw/manage/model/SxwBaseInfoConfig.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.sxw.manage.model.SxwBaseInfoConfig -> sxw_base_info_config
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/sxw/manage/model/SxwMoneyAndLimit.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.sxw.manage.model.SxwMoneyAndLimit -> sxw_money_and_limit
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/sxw/play/model/SxwTzInfo.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.sxw.play.model.SxwTzInfo -> sxw_tz_info
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/sxw/play/model/SxwTzDetail.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.sxw.play.model.SxwTzDetail -> sxw_tz_detail
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/sxw/manage/model/SxwZjInfo.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.sxw.manage.model.SxwZjInfo -> sxw_zj_info
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/exb/manage/model/ExbZjNumConfig.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.exb.manage.model.ExbZjNumConfig -> exb_zj_num_config
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/exb/manage/model/ExbBaseInfoConfig.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.exb.manage.model.ExbBaseInfoConfig -> exb_base_info_config
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/exb/manage/model/ExbMoneyAndLimit.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.exb.manage.model.ExbMoneyAndLimit -> exb_money_and_limit
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/exb/play/model/ExbTzInfo.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.exb.play.model.ExbTzInfo -> exb_tz_info
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/exb/play/model/ExbTzDetail.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.exb.play.model.ExbTzDetail -> exb_tz_detail
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Reading mappings from resource : com/onmyway/exb/manage/model/ExbZjInfo.hbm.xml
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping class: com.onmyway.exb.manage.model.ExbZjInfo -> exb_zj_info
+2013-05-27 20:35:16 [org.hibernate.cfg.Configuration]:INFO - Configured SessionFactory: null
+2013-05-27 20:35:16 [org.springframework.orm.hibernate3.LocalSessionFactoryBean]:INFO - Building new Hibernate SessionFactory
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping collection: com.onmyway.ssc.play.model.SscTzInfo.detailList -> ssc_tz_detail
+2013-05-27 20:35:16 [org.hibernate.cfg.HbmBinder]:INFO - Mapping collection: com.onmyway.exb.play.model.ExbTzInfo.detailList -> exb_tz_detail
+2013-05-27 20:35:16 [org.hibernate.connection.DriverManagerConnectionProvider]:INFO - Using Hibernate built-in connection pool (not for production use!)
+2013-05-27 20:35:16 [org.hibernate.connection.DriverManagerConnectionProvider]:INFO - Hibernate connection pool size: 20
+2013-05-27 20:35:16 [org.hibernate.connection.DriverManagerConnectionProvider]:INFO - autocommit mode: false
+2013-05-27 20:35:16 [org.hibernate.connection.DriverManagerConnectionProvider]:INFO - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/lottery
+2013-05-27 20:35:16 [org.hibernate.connection.DriverManagerConnectionProvider]:INFO - connection properties: {user=root, password=****, release_mode=on_close}
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - RDBMS: MySQL, version: 5.0.37-community-nt
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.5 ( Revision: ${svn.Revision} )
+2013-05-27 20:35:17 [org.hibernate.dialect.Dialect]:INFO - Using dialect: org.hibernate.dialect.MySQLDialect
+2013-05-27 20:35:17 [org.hibernate.transaction.TransactionFactoryFactory]:INFO - Using default transaction strategy (direct JDBC transactions)
+2013-05-27 20:35:17 [org.hibernate.transaction.TransactionManagerLookupFactory]:INFO - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Automatic flush during beforeCompletion(): disabled
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Automatic session close at end of transaction: disabled
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - JDBC batch size: 15
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - JDBC batch updates for versioned data: disabled
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Scrollable result sets: enabled
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - JDBC3 getGeneratedKeys(): enabled
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Connection release mode: on_close
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Maximum outer join fetch depth: 2
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Default batch fetch size: 1
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Generate SQL with comments: disabled
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Order SQL updates by primary key: disabled
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2013-05-27 20:35:17 [org.hibernate.hql.ast.ASTQueryTranslatorFactory]:INFO - Using ASTQueryTranslatorFactory
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Query language substitutions: {}
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - JPA-QL strict compliance: disabled
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Second-level cache: enabled
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Query cache: disabled
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Cache provider: org.hibernate.cache.NoCacheProvider
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Optimize cache for minimal puts: disabled
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Structured second-level cache entries: disabled
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Echoing all SQL to stdout
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Statistics: disabled
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Deleted entity synthetic identifier rollback: disabled
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Default entity-mode: pojo
+2013-05-27 20:35:17 [org.hibernate.cfg.SettingsFactory]:INFO - Named query checking : enabled
+2013-05-27 20:35:17 [org.hibernate.impl.SessionFactoryImpl]:INFO - building session factory
+2013-05-27 20:35:19 [org.hibernate.impl.SessionFactoryObjectFactory]:INFO - Not binding factory to JNDI, no JNDI name configured
+2013-05-27 20:35:19 [org.springframework.aop.framework.DefaultAopProxyFactory]:INFO - CGLIB2 available: proxyTargetClass feature enabled
+2013-05-27 20:35:20 [org.springframework.jdbc.datasource.JdbcTransactionObjectSupport]:INFO - JDBC 3.0 Savepoint class is available
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzhixuan,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingqian3,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=renxuan2,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingqian2,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=yixingzhixuan,limit=10
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=erxingzhixuan,limit=10
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sixingzhixuan,limit=10
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sanxingzhixuan,limit=10
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sanxingzu3,limit=10
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sanxingzu6,limit=10
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=dxdszhixuan,limit=10
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=erxingzuxuan,limit=10
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzuchong4,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzu120,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzu60,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzu30,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzu20,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzu10,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzu5,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzuchong2,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzuchong3,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sixingzu24,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sixingzu12,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sixingzu6,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sixingzu4,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingtx,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=renxuan3,limit=5
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=renxuan1,limit=0
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzhixuan,prize=100000
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingqian3,prize=200
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=renxuan2,prize=200
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingqian2,prize=20
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=yixingzhixuan,prize=10
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=erxingzhixuan,prize=100
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sixingzhixuan,prize=2000
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sanxingzhixuan,prize=1000
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sanxingzu3,prize=320
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sanxingzu6,prize=160
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=dxdszhixuan,prize=4
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=erxingzuxuan,prize=3
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzuchong4,prize=2500
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzu120,prize=830
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzu60,prize=1650
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzu30,prize=3300
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzu20,prize=5000
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzu10,prize=10000
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzu5,prize=20000
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzuchong2,prize=12
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingzuchong3,prize=115
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sixingzu24,prize=410
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sixingzu12,prize=830
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sixingzu6,prize=1650
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=sixingzu4,prize=2500
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=wuxingtx,prize=20000
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=renxuan3,prize=300
+2013-05-27 20:35:20 [com.onmyway.ssc.manage.service.SscManageServiceImpl]:INFO - rule=renxuan1,prize=100
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan1,limit=200
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan2,limit=500
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan2zhiqian2,limit=100
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan2zuqian2,limit=200
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan3zhiqian3,limit=10
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan3,limit=500
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan3zuqian3,limit=50
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan4,limit=150
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan5,limit=20
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan6,limit=150
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan7,limit=400
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan8,limit=1000
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan1,prize=15
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan2,prize=8
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan2zhiqian2,prize=150
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan2zuqian2,prize=75
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan3zhiqian3,prize=1300
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan3,prize=23
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan3zuqian3,prize=230
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan4,prize=85
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan5,prize=580
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan6,prize=100
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan7,prize=30
+2013-05-27 20:35:21 [com.onmyway.sxw.manage.service.SxwManageServiceImpl]:INFO - 12x5:rule=renxuan8,prize=12
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan1shutou,limit=5
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan1hongtou,limit=5
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan2renxuan,limit=5
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan2lianzu,limit=5
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan2lianzhi,limit=5
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan3renxuan,limit=5
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan3qianzu,limit=5
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan3qianzhi,limit=5
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan4renxuan,limit=5
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan5renxuan,limit=10
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan1shutou,prize=24
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan1hongtou,prize=8
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan2renxuan,prize=8
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan2lianzu,prize=31
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan2lianzhi,prize=62
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan3renxuan,prize=24
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan3qianzu,prize=1300
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan3qianzhi,prize=8000
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan4renxuan,prize=80
+2013-05-27 20:35:21 [com.onmyway.exb.manage.service.ExbManageServiceImpl]:INFO - 快乐十分:rule=xuan5renxuan,prize=320
+2013-05-27 20:35:21 [org.springframework.web.context.ContextLoader]:INFO - Using context class [org.springframework.web.context.support.XmlWebApplicationContext] for root WebApplicationContext
+2013-05-27 20:35:21 [org.springframework.web.context.ContextLoader]:INFO - Root WebApplicationContext: initialization completed in 8828 ms
+2013-05-27 20:35:21 [org.apache.catalina.core.ContainerBase.[Catalina].[ljy].[/]]:INFO - Set web app root system property: 'mydream.root' = [D:\workspace\poker\WebRoot\]
+2013-05-27 20:35:21 [org.apache.catalina.core.ContainerBase.[Catalina].[ljy].[/]]:INFO - Initializing Log4J from [D:\workspace\poker\WebRoot\WEB-INF\config\log4j.properties]
+2013-05-27 20:35:21 [org.logicalcobwebs.proxool.ProxoolFacade]:INFO - Proxool 0.9.1 (23-Aug-2008 11:10)
+2013-05-27 20:35:22 [org.apache.struts.validator.ValidatorPlugIn]:INFO - Loading validation rules file from '/WEB-INF/validator-rules.xml'
+2013-05-27 20:36:38 [dbconnpac.ProxoolPoolManager]:INFO - 活动连接数:5(active)  可得到的连接数:5(available)  总连接数:50(max)
+2013-05-27 20:36:38 [dbconnpac.ProxoolPoolManager]:INFO - 活动连接数:5(active)  可得到的连接数:5(available)  总连接数:50(max)
+2013-05-27 20:36:38 [dbconnpac.ProxoolPoolManager]:INFO - 活动连接数:5(active)  可得到的连接数:5(available)  总连接数:50(max)
+2013-05-27 20:36:38 [dbconnpac.ProxoolPoolManager]:INFO - 活动连接数:5(active)  可得到的连接数:5(available)  总连接数:50(max)
+2013-05-27 20:36:38 [org.logicalcobwebs.proxool.mydream]:INFO - Proxool statistics legend: "s - r  (a/t/o)" > s=served, r=refused (only shown if non-zero), a=active, t=total, o=offline (being tested)
+2013-05-27 20:36:38 [org.logicalcobwebs.proxool.mydream]:WARN - 000005 (03/10/00) - #3 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:36:38 [org.logicalcobwebs.proxool.mydream]:WARN - 000005 (03/10/00) - #7 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:36:38 [dbconnpac.ProxoolPoolManager]:INFO - 活动连接数:4(active)  可得到的连接数:6(available)  总连接数:50(max)
+2013-05-27 20:36:38 [org.logicalcobwebs.proxool.mydream]:WARN - 000006 (03/10/00) - #5 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:36:38 [org.logicalcobwebs.proxool.mydream]:WARN - 000006 (02/10/00) - #9 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:36:38 [org.logicalcobwebs.proxool.mydream]:WARN - 000006 (01/10/00) - #8 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:36:39 [org.logicalcobwebs.proxool.mydream]:WARN - 000006 (00/10/00) - #1 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:36:50 [dbconnpac.ProxoolPoolManager]:INFO - 活动连接数:1(active)  可得到的连接数:9(available)  总连接数:50(max)
+2013-05-27 20:36:51 [org.logicalcobwebs.proxool.mydream]:WARN - 000007 (00/10/00) - #10 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:36:51 [org.logicalcobwebs.proxool.mydream]:WARN - 000008 (00/10/00) - #1 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:36:51 [org.logicalcobwebs.proxool.mydream]:WARN - 000009 (00/10/00) - #2 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:36:56 [org.logicalcobwebs.proxool.mydream]:WARN - 000010 (00/10/00) - #3 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:36:57 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:41:00 [org.logicalcobwebs.proxool.mydream]:WARN - 000011 (00/10/00) - #4 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:41:01 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:41:30 [org.logicalcobwebs.proxool.mydream]:WARN - 000012 (00/10/00) - #5 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:41:31 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:41:43 [org.logicalcobwebs.proxool.mydream]:WARN - 000013 (00/10/00) - #6 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:41:43 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:42:08 [org.logicalcobwebs.proxool.mydream]:WARN - 000014 (00/10/00) - #7 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:42:08 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:42:37 [org.logicalcobwebs.proxool.mydream]:WARN - 000015 (00/10/00) - #8 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:42:37 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:43:44 [org.logicalcobwebs.proxool.mydream]:WARN - 000016 (00/10/00) - #9 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:43:44 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:43:59 [org.logicalcobwebs.proxool.mydream]:WARN - 000017 (00/10/00) - #10 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:43:59 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:44:43 [org.logicalcobwebs.proxool.mydream]:WARN - 000018 (00/10/00) - #1 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:44:43 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:44:54 [org.logicalcobwebs.proxool.mydream]:WARN - 000019 (00/10/00) - #2 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:44:54 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:45:15 [org.logicalcobwebs.proxool.mydream]:WARN - 000020 (00/10/00) - #3 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:45:16 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:45:42 [org.logicalcobwebs.proxool.mydream]:WARN - 000021 (00/10/00) - #4 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:45:42 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:45:56 [org.logicalcobwebs.proxool.mydream]:WARN - 000022 (00/10/00) - #5 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:45:56 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:47:37 [org.logicalcobwebs.proxool.mydream]:WARN - 000023 (00/10/00) - #6 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:47:37 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'exbIssueTimeForm'
+2013-05-27 20:47:56 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'exbIssueTimeForm'
+2013-05-27 20:47:56 [org.logicalcobwebs.proxool.mydream]:WARN - 000024 (00/10/00) - #7 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:48:16 [org.logicalcobwebs.proxool.mydream]:WARN - 000025 (00/10/00) - #8 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:48:16 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'exbIssueTimeForm'
+2013-05-27 20:48:39 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'exbIssueTimeForm'
+2013-05-27 20:48:39 [org.logicalcobwebs.proxool.mydream]:WARN - 000026 (00/10/00) - #9 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:49:43 [org.logicalcobwebs.proxool.mydream]:WARN - 000027 (00/10/00) - #10 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:49:43 [org.logicalcobwebs.proxool.mydream]:WARN - 000028 (00/10/00) - #1 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:49:43 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sscIssueTimeForm'
+2013-05-27 20:49:52 [org.logicalcobwebs.proxool.mydream]:WARN - 000029 (00/10/00) - #2 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:49:52 [org.logicalcobwebs.proxool.mydream]:WARN - 000030 (00/10/00) - #3 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:49:52 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sscIssueTimeForm'
+2013-05-27 20:50:10 [org.logicalcobwebs.proxool.mydream]:WARN - 000031 (00/10/00) - #4 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:50:10 [org.logicalcobwebs.proxool.mydream]:WARN - 000032 (00/10/00) - #5 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:50:10 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sscIssueTimeForm'
+2013-05-27 20:51:28 [org.logicalcobwebs.proxool.mydream]:WARN - 000033 (00/10/00) - #6 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:51:28 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:53:53 [org.logicalcobwebs.proxool.mydream]:WARN - 000034 (00/10/00) - #7 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:53:53 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:54:06 [beanpac.DwrBean]:WARN - 准备【删除】11选5的所有记录:2013-05-27 20:54:06
+2013-05-27 20:54:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000035 (00/10/00) - #8 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:54:06 [beanpac.DwrBean]:WARN - 【删除】11选5的所有记录完毕，结果为true
+2013-05-27 20:57:17 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'exbIssueTimeForm'
+2013-05-27 20:57:17 [org.logicalcobwebs.proxool.mydream]:WARN - 000036 (00/10/00) - #9 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:57:28 [org.logicalcobwebs.proxool.mydream]:WARN - 000037 (00/10/00) - #10 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:57:28 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 20:57:32 [org.logicalcobwebs.proxool.mydream]:WARN - 000038 (00/10/00) - #1 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:57:33 [org.logicalcobwebs.proxool.mydream]:WARN - 000039 (00/10/00) - #2 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 20:57:33 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sscIssueTimeForm'
+2013-05-27 21:00:46 [org.logicalcobwebs.proxool.mydream]:WARN - 000040 (00/10/00) - #3 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:00:46 [org.logicalcobwebs.proxool.mydream]:WARN - 000041 (00/10/00) - #4 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:00:46 [org.logicalcobwebs.proxool.mydream]:WARN - 000042 (00/10/00) - #5 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:00:46 [org.logicalcobwebs.proxool.mydream]:WARN - 000043 (00/10/00) - #6 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:00:46 [org.logicalcobwebs.proxool.mydream]:WARN - 000044 (00/10/00) - #7 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:00:46 [org.logicalcobwebs.proxool.mydream]:WARN - 000045 (00/10/00) - #8 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:00:46 [org.logicalcobwebs.proxool.mydream]:WARN - 000046 (00/10/00) - #9 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:00:46 [org.logicalcobwebs.proxool.mydream]:WARN - 000047 (00/10/00) - #10 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:00:46 [org.logicalcobwebs.proxool.mydream]:WARN - 000048 (00/10/00) - #1 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:00:46 [org.logicalcobwebs.proxool.mydream]:WARN - 000049 (00/10/00) - #2 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:00:46 [org.logicalcobwebs.proxool.mydream]:WARN - 000050 (00/10/00) - #3 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:00:47 [org.logicalcobwebs.proxool.mydream]:WARN - 000051 (00/10/00) - #4 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000052 (00/10/00) - #5 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000053 (00/10/00) - #6 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000054 (00/10/00) - #7 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000055 (00/10/00) - #8 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000056 (00/10/00) - #9 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000057 (00/10/00) - #10 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000058 (00/10/00) - #1 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000059 (00/10/00) - #2 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000060 (00/10/00) - #3 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000061 (00/10/00) - #4 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000062 (00/10/00) - #5 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:07 [org.logicalcobwebs.proxool.mydream]:WARN - 000063 (00/10/00) - #6 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:30 [beanpac.DwrBean]:WARN - 准备【删除】快乐扑克的所有记录:2013-05-27 21:03:30
+2013-05-27 21:03:30 [beanpac.DwrBean]:INFO - 删除_tz:delete from pokwagerinfo
+2013-05-27 21:03:30 [beanpac.DwrBean]:INFO - 删除_zj:delete from pokprizeinfo
+2013-05-27 21:03:30 [org.logicalcobwebs.proxool.mydream]:WARN - 000064 (00/10/00) - #7 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:30 [beanpac.DwrBean]:WARN - 【删除】快乐扑克的所有记录完毕，结果为true
+2013-05-27 21:03:39 [org.logicalcobwebs.proxool.mydream]:WARN - 000065 (00/10/00) - #8 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:39 [org.logicalcobwebs.proxool.mydream]:WARN - 000066 (00/10/00) - #9 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:39 [org.logicalcobwebs.proxool.mydream]:WARN - 000067 (00/10/00) - #10 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:39 [org.logicalcobwebs.proxool.mydream]:WARN - 000068 (00/10/00) - #1 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:39 [org.logicalcobwebs.proxool.mydream]:WARN - 000069 (00/10/00) - #2 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:39 [org.logicalcobwebs.proxool.mydream]:WARN - 000070 (00/10/00) - #3 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:39 [org.logicalcobwebs.proxool.mydream]:WARN - 000071 (00/10/00) - #4 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:39 [org.logicalcobwebs.proxool.mydream]:WARN - 000072 (00/10/00) - #5 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:40 [org.logicalcobwebs.proxool.mydream]:WARN - 000073 (00/10/00) - #6 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:51 [beanpac.DwrBean]:WARN - 准备【删除】时时乐的所有记录:2013-05-27 21:03:51
+2013-05-27 21:03:51 [beanpac.DwrBean]:INFO - 删除_tz:delete from lauwagerinfo
+2013-05-27 21:03:51 [beanpac.DwrBean]:INFO - 删除_zj:delete from lauprizeinfo
+2013-05-27 21:03:51 [org.logicalcobwebs.proxool.mydream]:WARN - 000074 (00/10/00) - #7 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:03:51 [beanpac.DwrBean]:WARN - 【删除】时时乐的所有记录完毕，结果为true
+2013-05-27 21:04:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000075 (00/10/00) - #8 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000076 (00/10/00) - #9 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000077 (00/10/00) - #10 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:06 [org.logicalcobwebs.proxool.mydream]:WARN - 000078 (00/10/00) - #1 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:07 [org.logicalcobwebs.proxool.mydream]:WARN - 000079 (00/10/00) - #2 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:13 [beanpac.DwrBean]:WARN - 准备【删除】排列三的所有记录:2013-05-27 21:04:13
+2013-05-27 21:04:13 [beanpac.DwrBean]:INFO - 删除_tz:delete from pthwagerinfo
+2013-05-27 21:04:13 [beanpac.DwrBean]:INFO - 删除_zj:delete from pthprizeinfo
+2013-05-27 21:04:13 [org.logicalcobwebs.proxool.mydream]:WARN - 000080 (00/10/00) - #3 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:13 [beanpac.DwrBean]:WARN - 【删除】排列三的所有记录完毕，结果为true
+2013-05-27 21:04:24 [org.logicalcobwebs.proxool.mydream]:WARN - 000081 (00/10/00) - #4 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:24 [org.logicalcobwebs.proxool.mydream]:WARN - 000082 (00/10/00) - #5 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:24 [org.logicalcobwebs.proxool.mydream]:WARN - 000083 (00/10/00) - #6 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:24 [org.logicalcobwebs.proxool.mydream]:WARN - 000084 (00/10/00) - #7 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:25 [org.logicalcobwebs.proxool.mydream]:WARN - 000085 (00/10/00) - #8 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:30 [beanpac.DwrBean]:WARN - 准备【删除】福彩3d的所有记录:2013-05-27 21:04:30
+2013-05-27 21:04:30 [beanpac.DwrBean]:INFO - 删除_tz:delete from hapwagerinfo
+2013-05-27 21:04:30 [beanpac.DwrBean]:INFO - 删除_zj:delete from happrizeinfo
+2013-05-27 21:04:30 [org.logicalcobwebs.proxool.mydream]:WARN - 000086 (00/10/00) - #9 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:30 [beanpac.DwrBean]:WARN - 【删除】福彩3d的所有记录完毕，结果为true
+2013-05-27 21:04:41 [org.logicalcobwebs.proxool.mydream]:WARN - 000087 (00/10/00) - #10 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:42 [org.logicalcobwebs.proxool.mydream]:WARN - 000088 (00/10/00) - #1 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:42 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sscIssueTimeForm'
+2013-05-27 21:04:48 [beanpac.DwrBean]:WARN - 准备【删除】时时彩的所有记录:2013-05-27 21:04:48
+2013-05-27 21:04:48 [beanpac.DwrBean]:INFO - 删除_tz:delete from ssc_tz_info
+2013-05-27 21:04:48 [beanpac.DwrBean]:INFO - 删除_tz_detail:delete from ssc_tz_detail
+2013-05-27 21:04:48 [beanpac.DwrBean]:INFO - 删除_zj:delete from ssc_zj_info
+2013-05-27 21:04:48 [org.logicalcobwebs.proxool.mydream]:WARN - 000089 (00/10/00) - #2 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:48 [beanpac.DwrBean]:WARN - 【删除】时时彩的所有记录完毕，结果为true
+2013-05-27 21:04:56 [org.logicalcobwebs.proxool.mydream]:WARN - 000090 (00/10/00) - #3 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:04:56 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'sxwIssueTimeForm'
+2013-05-27 21:05:08 [beanpac.DwrBean]:WARN - 准备【删除】11选5的所有记录:2013-05-27 21:05:08
+2013-05-27 21:05:08 [beanpac.DwrBean]:INFO - 删除_tz:delete from sxw_tz_info
+2013-05-27 21:05:08 [beanpac.DwrBean]:INFO - 删除_tz_detail:delete from sxw_tz_detail
+2013-05-27 21:05:08 [beanpac.DwrBean]:INFO - 删除_zj:delete from sxw_zj_info
+2013-05-27 21:05:08 [org.logicalcobwebs.proxool.mydream]:WARN - 000091 (00/10/00) - #4 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:05:08 [beanpac.DwrBean]:WARN - 【删除】11选5的所有记录完毕，结果为true
+2013-05-27 21:05:17 [org.apache.struts.util.RequestUtils]:WARN - No FormBeanConfig found under 'exbIssueTimeForm'
+2013-05-27 21:05:17 [org.logicalcobwebs.proxool.mydream]:WARN - 000092 (00/10/00) - #5 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:05:23 [beanpac.DwrBean]:WARN - 准备【删除】快乐十分的所有记录:2013-05-27 21:05:23
+2013-05-27 21:05:23 [beanpac.DwrBean]:INFO - 删除_tz:delete from exb_tz_info
+2013-05-27 21:05:23 [beanpac.DwrBean]:INFO - 删除_tz_detail:delete from exb_tz_detail
+2013-05-27 21:05:23 [beanpac.DwrBean]:INFO - 删除_zj:delete from exb_zj_info
+2013-05-27 21:05:23 [org.logicalcobwebs.proxool.mydream]:WARN - 000093 (00/10/00) - #6 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice.
+2013-05-27 21:05:23 [beanpac.DwrBean]:WARN - 【删除】快乐十分的所有记录完毕，结果为true

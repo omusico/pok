@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+ PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+ "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+ 
+<!-- a tag library descriptor -->
+
+<taglib>
+  <tlibversion>1.0</tlibversion>
+  <jspversion>1.1</jspversion>
+  <shortname>ctl</shortname>
+  <uri></uri>
+  <info></info>
+
+  <tag>
+    <name>page</name>
+    <tagclass>tag.PageTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info></info>
+    <attribute>
+       <name>curpage</name>
+       <required>true</required>
+       <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+       <name>maxpage</name>
+       <required>true</required>
+       <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+       <name>prevpage</name>
+       <required>true</required>
+       <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+       <name>nextpage</name>
+       <required>true</required>
+       <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+       <name>servhref</name>
+       <required>true</required>
+       <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+</taglib>

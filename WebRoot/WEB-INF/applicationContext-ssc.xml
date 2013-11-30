@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<!--
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+  -->
+	
+	<!-- 时时彩后台管理 -->
+	<bean id="sscManageService"	parent="baseTransactionProxy">
+		<property name="target" ref="sscManageServiceTarget">
+		</property>
+	</bean>
+	<bean id="sscManageServiceTarget"	class="com.onmyway.ssc.manage.service.SscManageServiceImpl">
+		<property name="sscNumConfigDao" ref="sscNumConfigDao"/>
+		<property name="sscBaseInfoConfigDao" ref="sscBaseInfoConfigDao"/>		
+		<property name="sscMoneyLimitDao" ref="sscMoneyLimitDao"/>		
+		<property name="sscZjInfoDao" ref="sscZjInfoDao"/>	
+		<property name="sscTzInfoDao" ref="sscTzInfoDao"/>	
+			
+	</bean>	
+	 <!-- 中奖号码添加 begin-->
+	<bean id="sscNumConfigDao"	class="com.onmyway.ssc.manage.dao.SscZjNumConfigDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>		 
+ 	 <!-- 基本信息添加 begin-->
+	<bean id="sscBaseInfoConfigDao"	class="com.onmyway.ssc.manage.dao.SscBaseInfoConfigDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>		
+    <!-- 基本信息呢添加 end-->
+    <!-- 奖金及限号配置信息添加 begin-->
+	<bean id="sscMoneyLimitDao"	class="com.onmyway.ssc.manage.dao.SscMoneyLimitDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>		
+    <!-- 奖金及限号信息添加 end-->
+
+    
+    <!-- 通用信息展示-开奖时间-追加倍投 -->
+    <bean id="sscIssuePublicService"	parent="baseTransactionProxy">
+		<property name="target" ref="sscIssuePublicServiceTarget"/>		
+	</bean>
+	<bean id="sscIssuePublicServiceTarget"	class="com.onmyway.ssc.play.service.SscIssuePublicServiceImpl">
+		<property name="sscBaseInfoConfigDao" ref="sscBaseInfoConfigDao"/>		
+	</bean>	
+	
+	<!-- 时时彩-投注信息管理 -->
+	<bean id="sscTzInfoService"	parent="baseTransactionProxy">
+		<property name="target" ref="sscTzInfoServiceTarget"/>
+	</bean>
+	<bean id="sscTzInfoServiceTarget"	class="com.onmyway.ssc.play.service.SscTzInfoServiceImpl">
+		<property name="sscTzInfoDao" ref="sscTzInfoDao"/>	
+		<property name="sscTzDetailDao" ref="sscTzDetailDao"/>	
+		<property name="userManageDao" ref="userManageDao"/>	
+	</bean>	
+	<bean id="sscTzInfoDao"	class="com.onmyway.ssc.play.dao.SscTzInfoDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>	
+	<bean id="sscTzDetailDao"	class="com.onmyway.ssc.play.dao.SscTzDetailDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 中奖用户信息 begin-->
+	<bean id="sscZjService"	class="com.onmyway.ssc.manage.service.SscZjServiceImpl">
+		
+	</bean>		
+	 <bean id="sscZjInfoDao"	class="com.onmyway.ssc.manage.dao.SscZjInfoDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+    <!-- 中奖信息 end-->
+    
+   
+	
+    <!-- 限号信息查询 begin-->
+	<bean id="sscLimitService"	class="com.onmyway.ssc.play.service.SscLimitServiceImpl">
+	</bean>		
+    <!-- 限号信息查询 end-->
+	<!-- 通用工具 -->
+	<bean id="sscCommonTool" class="com.onmyway.common.ssc.SscCommonTool">
+		<property name="sscIssuePublicService" ref="sscIssuePublicService"/>		
+	</bean>	
+	<!-- 时时彩初始化 -->
+	<bean id="sscLimitInfoInit" class="com.onmyway.init.SscLimitInfoInit" init-method="initMap">
+		<property name="sscManageService" ref="sscManageService"/>		
+	</bean>	
+	
+	
+</beans>

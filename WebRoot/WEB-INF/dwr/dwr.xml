@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" 
+    "http://getahead.org/dwr//dwr20.dtd">
+
+<dwr>
+
+	<!-- init is only needed if you are extending DWR -->
+	<init>
+
+	</init>
+
+	<!-- without allow, DWR isn't allowed to do anything -->
+	<allow>
+        
+        <create creator="new" javascript="LauWinNumGet">
+        	<param name="class" value="pubmethpac.LauWinNumGet"/>
+        </create>
+        
+        
+        <create creator="new" javascript="InitEncryptPassword">
+        	<param name="class" value="beanpac.InitEncryptPassword"/>
+        </create>
+           <!-- 开奖倒计时中的服务器时间 -->
+      
+        <create creator="new" javascript="ServerTime">
+        	<param name="class" value="com.onmyway.common.ServerTime"/>
+        </create>     
+           
+           
+           
+         <create creator="spring" javascript="DwrBean">
+        	<param name="beanName" value="dwrBean"/>
+        </create>       
+        <convert match="com.onmyway.ssc.manage.model.SscZjNumConfig" converter="bean"/>
+        <convert match="com.onmyway.sxw.manage.model.SxwZjNumConfig" converter="bean"/>
+        <convert match="com.onmyway.exb.manage.model.ExbZjNumConfig" converter="bean"/>
+	</allow>
+
+	<!-- you may need to tell DWR about method signatures -->
+	<signatures></signatures>
+
+</dwr>
+

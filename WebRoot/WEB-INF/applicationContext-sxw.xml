@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<!--
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+  -->
+	
+	<!-- 12选5后台管理 -->
+	<bean id="sxwManageService"	parent="baseTransactionProxy">
+		<property name="target" ref="sxwManageServiceTarget">
+		</property>
+	</bean>
+	<bean id="sxwManageServiceTarget"	class="com.onmyway.sxw.manage.service.SxwManageServiceImpl">
+		<property name="sxwNumConfigDao" ref="sxwNumConfigDao"/>
+		<property name="sxwBaseInfoConfigDao" ref="sxwBaseInfoConfigDao"/>		
+		<property name="sxwMoneyLimitDao" ref="sxwMoneyLimitDao"/>		
+		<property name="sxwZjInfoDao" ref="sxwZjInfoDao"/>		
+	</bean>	
+	 <!-- 中奖号码添加 begin-->
+	<bean id="sxwNumConfigDao"	class="com.onmyway.sxw.manage.dao.SxwZjNumConfigDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>		 
+ 	 <!-- 基本信息添加 begin-->
+	<bean id="sxwBaseInfoConfigDao"	class="com.onmyway.sxw.manage.dao.SxwBaseInfoConfigDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>		
+    <!-- 基本信息呢添加 end-->
+    <!-- 奖金及限号信息添加 begin-->
+	<bean id="sxwMoneyLimitDao"	class="com.onmyway.sxw.manage.dao.SxwMoneyLimitDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>		
+    <!-- 奖金及限号信息添加 end-->
+    
+    <!-- 通用信息展示-开奖时间-追加倍投 	-->
+    <bean id="sxwIssuePublicService"	parent="baseTransactionProxy">
+		<property name="target" ref="sxwIssuePublicServiceTarget"/>		
+	</bean>
+	<bean id="sxwIssuePublicServiceTarget"	class="com.onmyway.sxw.play.service.SxwIssuePublicServiceImpl">
+		<property name="sxwBaseInfoConfigDao" ref="sxwBaseInfoConfigDao"/>		
+	</bean>	
+
+	<!-- 12x5-投注信息管理 -->
+	<bean id="sxwTzInfoService"	parent="baseTransactionProxy">
+		<property name="target" ref="sxwTzInfoServiceTarget"/>
+	</bean>
+	<bean id="sxwTzInfoServiceTarget"	class="com.onmyway.sxw.play.service.SxwTzInfoServiceImpl">
+		<property name="sxwTzInfoDao" ref="sxwTzInfoDao"/>	
+		<property name="sxwTzDetailDao" ref="sxwTzDetailDao"/>	
+		<property name="userManageDao" ref="userManageDao"/>	
+	</bean>	
+	<bean id="sxwTzInfoDao"	class="com.onmyway.sxw.play.dao.SxwTzInfoDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>	
+	<bean id="sxwTzDetailDao"	class="com.onmyway.sxw.play.dao.SxwTzDetailDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	 	<!-- 中奖用户信息 begin-->
+		
+	 <bean id="sxwZjInfoDao"	class="com.onmyway.sxw.manage.dao.SxwZjInfoDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+    <!-- 中奖信息 end-->
+	<!-- 限号信息查询 begin-->
+	<bean id="sxwLimitService"	class="com.onmyway.sxw.play.service.SxwLimitServiceImpl">
+	</bean>		
+    <!-- 限号信息查询 end-->
+	 <!-- 通用工具 -->
+	<bean id="sxwCommonTool" class="com.onmyway.common.sxw.SxwCommonTool">
+		<property name="sxwIssuePublicService" ref="sxwIssuePublicService"/>		
+	</bean>	
+	<!-- 12选5初始化 -->
+	<bean id="sxwLimitInfoInit" class="com.onmyway.init.SxwLimitInfoInit" init-method="initMap">
+		<property name="sxwManageService" ref="sxwManageService"/>		
+	</bean>	
+</beans>

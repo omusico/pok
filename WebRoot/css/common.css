@@ -1,0 +1,25 @@
+.input {
+	border: 1px solid #C9C9C9;
+	height: 18px;
+	text-align: left;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+}
+.anniu {
+	font-size: 12px;
+	color: #003366;
+	background-image: url(../image/anniu_coler1.gif);
+	background-repeat: repeat-x;
+	background-position: center center;
+	height: 21px;
+	width:70px;
+	border: 1px solid #999999;
+	margin: 0px;
+}
+.table_anniuxx {
+	height: 35px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #C1C1C1;
+}

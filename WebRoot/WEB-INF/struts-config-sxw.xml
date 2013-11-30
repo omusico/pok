@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans>
+  <form-bean name="sxwManageForm" 
+        	type="org.apache.struts.validator.LazyValidatorForm" />
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+  	<!-- 12选5-后台管理 -->
+  	<action name="sxwManageForm" scope="request" path="/sxwManage"
+			type="com.onmyway.sxw.manage.action.SxwManageAction"
+			parameter="method"
+			validate="false">
+			<forward name="success"
+				path="/../WEB-INF/usermanage/sxw/sxw_manage.jsp" />
+			<forward name="showConfigInfo" path="/jsp/sxw/isstime.jsp"/>	
+			<forward name="showZjUserInfo" path="/../jsp/sxw/public/sxw_zj_user_info.jsp"/>			
+			<forward name="showZjNum" path="/../jsp/sxw/public/sxw_zj_num_show.jsp"/>				
+	</action>
+	<!-- 12选5-开奖时间展示 -->
+  	<action name="sxwIssueTimeForm" scope="request" path="/sxwIssueTime"
+			type="com.onmyway.sxw.play.action.SxwIssueTimeAction"
+			parameter="method"
+			validate="false">
+			<forward name="show" path="/../jsp/sxw/isstime.jsp"/>			
+	</action>
+	
+	
+	<!-- 12选5-首页-中奖信息-追投信息展示-开奖动画-公用信息 -->
+  	<action name="sxwPublicInfo" scope="request" path="/sxwPublicInfo"
+			type="com.onmyway.sxw.play.action.SxwPublicInfoAction"
+			parameter="method"
+			validate="false">		
+			<forward name="sxwIndex" path="/../jsp/sxw/index_sxw.jsp"/>			
+			<forward name="showZjNumList" path="/../jsp/public/show_sxw_win_num_list.jsp"/>			
+			<forward name="showZhuitouPage" path="/../jsp/sxw/multiplay/sxw_zhuitou.jsp"/>			
+			<forward name="showWinMovie" path="/../jsp/sxw/sxw_win_movie.jsp"/>	
+			<forward name="showZjZoushi" path="/../jsp/public/sxw_zj_zoushi_detail.jsp"/>			
+			<forward name="viewUserTzInfo" path="/../jsp/sxw/user/sxw_user_tz_list.jsp"/>			
+			<forward name="viewUserZjInfo" path="/../jsp/sxw/user/sxw_user_zj_list.jsp"/>			
+	</action>
+	
+	<!-- 12选5-玩法 -->
+  	<action name="sxwPlay" scope="request" path="/sxwPlay"
+			type="com.onmyway.sxw.play.action.SxwPlayAction"
+			parameter="method"
+			validate="false">
+			<forward name="show" path="/../jsp/sxw/index_sxw.jsp"/>			
+			<forward name="xuan1fushi" path="/../jsp/sxw/play/xuanyi_play_fushi.jsp"/>			
+			
+			<forward name="xuan2fushi" path="/../jsp/sxw/play/xuaner_play_fushi.jsp"/>			
+			<forward name="xuan2dantuo" path="/../jsp/sxw/play/xuaner_play_dantuo.jsp"/>			
+			<forward name="xuan2zhiqian2" path="/../jsp/sxw/play/xuaner_play_zhiqian2.jsp"/>			
+			<forward name="xuan2zuqian2" path="/../jsp/sxw/play/xuaner_play_zuqian2.jsp"/>	
+			<forward name="xuan2zuqian2dantuo" path="/../jsp/sxw/play/xuaner_play_zuqian2_dantuo.jsp"/>	
+					
+			<forward name="xuan3fushi" path="/../jsp/sxw/play/xuansan_play_fushi.jsp"/>			
+			<forward name="xuan3zhiqian3" path="/../jsp/sxw/play/xuansan_play_zhiqian3.jsp"/>	
+			<forward name="xuan3zuqian3" path="/../jsp/sxw/play/xuansan_play_zuqian3.jsp"/>	
+			<forward name="xuan3zuqian3dantuo" path="/../jsp/sxw/play/xuansan_play_zuqian3_dantuo.jsp"/>	
+
+			<forward name="xuan3dantuo" path="/../jsp/sxw/play/xuansan_play_dantuo.jsp"/>			
+			<forward name="xuan4fushi" path="/../jsp/sxw/play/xuansi_play_fushi.jsp"/>			
+			<forward name="xuan4dantuo" path="/../jsp/sxw/play/xuansi_play_dantuo.jsp"/>			
+			<forward name="xuan5fushi" path="/../jsp/sxw/play/xuanwu_play_fushi.jsp"/>			
+			<forward name="xuan5dantuo" path="/../jsp/sxw/play/xuanwu_play_dantuo.jsp"/>	
+			
+			<forward name="xuan6fushi" path="/../jsp/sxw/play/xuan6_play_fushi.jsp"/>			
+			<forward name="xuan6dantuo" path="/../jsp/sxw/play/xuan6_play_dantuo.jsp"/>			
+			<forward name="xuan7fushi" path="/../jsp/sxw/play/xuan7_play_fushi.jsp"/>			
+			<forward name="xuan7dantuo" path="/../jsp/sxw/play/xuan7_play_dantuo.jsp"/>			
+			<forward name="xuan8fushi" path="/../jsp/sxw/play/xuan8_play_fushi.jsp"/>			
+			<forward name="xuan8dantuo" path="/../jsp/sxw/play/xuan8_play_dantuo.jsp"/>			
+					
+			 	
+	</action>
+  </action-mappings>
+  <message-resources parameter="ApplicationResources.properties" />
+</struts-config>
+

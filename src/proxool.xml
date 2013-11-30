@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<something-else-entirely>
+	<proxool>
+		<alias>mydream</alias>
+	 
+			<!-- localhost -->
+		<driver-url>
+			jdbc:mysql://localhost:3306/lottery?useUnicode=true&amp;characterEncoding=UTF-8
+		</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="password" />
+			<property name="useUnicode" value="true" />
+			<property name="characterEncoding" value="gb2312" />
+		</driver-properties>
+		
+		<!--  server new info
+			<driver-url>jdbc:mysql://211.147.221.51:3306/kaixincp2010</driver-url>
+			<driver-class>com.mysql.jdbc.Driver</driver-class>
+			<driver-properties>
+			<property name="user" value="kaixincp2010"/>
+			<property name="password" value="5WxnP0yeYR"/>
+			<property name="useUnicode" value="true"/>      
+			<property name="characterEncoding" value="gb2312"/>
+			</driver-properties>   
+		  -->  
+		<!--  server old info    -->
+		<!-- 
+			<driver-url>jdbc:mysql://211.147.221.2:3306/kaixincp2010</driver-url>
+			<driver-class>com.mysql.jdbc.Driver</driver-class>
+			<driver-properties>
+			<property name="user" value="magic_lottery_f"/>
+			<property name="password" value="~123qwe"/>
+			<property name="useUnicode" value="true"/>      
+			<property name="characterEncoding" value="gb2312"/>
+			</driver-properties>    
+		-->
+
+		
+	 
+
+		<maximum-connection-count>50</maximum-connection-count>
+		<minimum-connection-count>10</minimum-connection-count>
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time> 
+		<simultaneous-build-throttle>15</simultaneous-build-throttle> 
+		<prototype-count>5</prototype-count> 
+		<maximum-active-time>90000</maximum-active-time> 
+		<maximum-connection-lifetime>1800000</maximum-connection-lifetime>
+ 
+		<test-before-use>false</test-before-use>
+	 	<house-keeping-test-sql>
+			select CURRENT_DATE
+		</house-keeping-test-sql>
+	</proxool>
+</something-else-entirely>
+

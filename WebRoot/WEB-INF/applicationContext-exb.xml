@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<!--
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+  -->
+		<!-- 快乐十分后台管理 -->
+	<bean id="exbManageService"	parent="baseTransactionProxy">
+		<property name="target" ref="exbManageServiceTarget">
+		</property>
+	</bean>
+	<bean id="exbManageServiceTarget"	class="com.onmyway.exb.manage.service.ExbManageServiceImpl">
+		<property name="exbNumConfigDao" ref="exbNumConfigDao"/>
+		<property name="exbBaseInfoConfigDao" ref="exbBaseInfoConfigDao"/>		
+		<property name="exbMoneyLimitDao" ref="exbMoneyLimitDao"/>		
+		<property name="exbZjInfoDao" ref="exbZjInfoDao"/>		
+	</bean>	
+	 <!-- 中奖号码添加 begin-->
+	<bean id="exbNumConfigDao"	class="com.onmyway.exb.manage.dao.ExbZjNumConfigDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>		 
+ 	 <!-- 基本信息添加 begin-->
+	<bean id="exbBaseInfoConfigDao"	class="com.onmyway.exb.manage.dao.ExbBaseInfoConfigDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>		
+    <!-- 基本信息呢添加 end-->
+    <!-- 奖金及限号信息添加 begin-->
+	<bean id="exbMoneyLimitDao"	class="com.onmyway.exb.manage.dao.ExbMoneyLimitDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>		
+    <!-- 奖金及限号信息添加 end-->
+    
+    <!-- 通用信息展示-开奖时间-追加倍投 	-->
+    <bean id="exbIssuePublicService"	parent="baseTransactionProxy">
+		<property name="target" ref="exbIssuePublicServiceTarget"/>		
+	</bean>
+	<bean id="exbIssuePublicServiceTarget"	class="com.onmyway.exb.play.service.ExbIssuePublicServiceImpl">
+		<property name="exbBaseInfoConfigDao" ref="exbBaseInfoConfigDao"/>		
+	</bean>	
+
+	<!-- 快乐十分-投注信息管理 -->
+	<bean id="exbTzInfoService"	parent="baseTransactionProxy">
+		<property name="target" ref="exbTzInfoServiceTarget"/>
+	</bean>
+	<bean id="exbTzInfoServiceTarget"	class="com.onmyway.exb.play.service.ExbTzInfoServiceImpl">
+		<property name="exbTzInfoDao" ref="exbTzInfoDao"/>	
+		<property name="exbTzDetailDao" ref="exbTzDetailDao"/>	
+		<property name="userManageDao" ref="userManageDao"/>	
+	</bean>	
+	<bean id="exbTzInfoDao"	class="com.onmyway.exb.play.dao.ExbTzInfoDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>	
+	<bean id="exbTzDetailDao"	class="com.onmyway.exb.play.dao.ExbTzDetailDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	 	<!-- 中奖用户信息 begin-->
+		
+	 <bean id="exbZjInfoDao"	class="com.onmyway.exb.manage.dao.ExbZjInfoDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+    <!-- 中奖信息 end-->
+	<!-- 限号信息查询 begin-->
+	<bean id="exbLimitService"	class="com.onmyway.exb.play.service.ExbLimitServiceImpl">
+	</bean>		
+    <!-- 限号信息查询 end-->
+	 <!-- 通用工具 -->
+	<bean id="exbCommonTool" class="com.onmyway.common.exb.ExbCommonTool">
+		<property name="exbIssuePublicService" ref="exbIssuePublicService"/>		
+	</bean>	
+	<!-- 快乐十分初始化 -->
+	<bean id="exbLimitInfoInit" class="com.onmyway.init.ExbLimitInfoInit" init-method="initMap">
+		<property name="exbManageService" ref="exbManageService"/>		
+	</bean>	
+	 
+</beans>

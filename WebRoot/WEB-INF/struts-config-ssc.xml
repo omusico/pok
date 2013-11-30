@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans>
+  <form-bean name="sscManageForm" 
+        	type="org.apache.struts.validator.LazyValidatorForm" />
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+  	<!-- 时时彩-后台管理 -->
+  	<action name="sscManageForm" scope="request" path="/sscManage"
+			type="com.onmyway.ssc.manage.action.SscManageAction"
+			parameter="method"
+			validate="false">
+			<forward name="success"
+				path="/../WEB-INF/usermanage/ssc/ssc_manage.jsp" />
+			<forward name="showConfigInfo" path="/../jsp/ssc/isstime.jsp"/>			
+			<forward name="showZjUserInfo" path="/../jsp/ssc/public/ssc_zj_user_info.jsp"/>			
+			<forward name="showZjNum" path="/../jsp/ssc/public/ssc_zj_num_show.jsp"/>			
+	</action>
+	<!-- 时时彩-开奖时间展示 -->
+  	<action name="sscIssueTimeForm" scope="request" path="/sscIssueTime"
+			type="com.onmyway.ssc.play.action.SscIssueTimeAction"
+			parameter="method"
+			validate="false">
+			<forward name="show" path="/../jsp/ssc/isstime.jsp"/>			
+	</action>
+	
+	
+	<!-- 时时彩-首页-中奖信息-追投信息展示-开奖动画-公用信息 -->
+  	<action name="sscPublicInfo" scope="request" path="/sscPublicInfo"
+			type="com.onmyway.ssc.play.action.SscPublicInfoAction"
+			parameter="method"
+			validate="false">		
+			<forward name="sscIndex" path="/../jsp/ssc/index_ssc.jsp"/>			
+			<forward name="showZjNumList" path="/../jsp/public/show_ssc_win_num_list.jsp"/>			
+			<forward name="showZhuitouPage" path="/../jsp/ssc/multiplay/ssc_zhuitou.jsp"/>			
+			<forward name="showWinMovie" path="/../jsp/ssc/ssc_win_movie.jsp"/>			
+			<forward name="showZjZoushi" path="/../jsp/public/ssc_zj_zoushi_detail.jsp"/>	
+					
+			<forward name="viewUserTzInfo" path="/../jsp/ssc/user/ssc_user_tz_list.jsp"/>			
+			<forward name="viewUserZjInfo" path="/../jsp/ssc/user/ssc_user_zj_list.jsp"/>			
+	</action>
+	
+	<!-- 时时彩-玩法 -->
+  	<action name="sscPlay" scope="request" path="/sscPlay"
+			type="com.onmyway.ssc.play.action.SscPlayAction"
+			parameter="method"
+			validate="false">
+			<forward name="show" path="/../jsp/ssc/index_ssc.jsp"/>			
+			<forward name="wuxingTx" path="/../jsp/ssc/play/wuxing_tx_play.jsp"/>			
+			<forward name="wuxingFushi" path="/../jsp/ssc/play/wuxing_play_fushi.jsp"/>			
+			<forward name="wuxingDanshi" path="/../jsp/ssc/play/wuxing_play_danshi.jsp"/>	
+			<forward name="wuxingZu120" path="/../jsp/ssc/play/wuxing_zuxuan_play_zu120.jsp"/>		
+			<forward name="wuxingZu60" path="/../jsp/ssc/play/wuxing_zuxuan_play_zu60.jsp"/>		
+			<forward name="wuxingZu30" path="/../jsp/ssc/play/wuxing_zuxuan_play_zu30.jsp"/>		
+			<forward name="wuxingZu20" path="/../jsp/ssc/play/wuxing_zuxuan_play_zu20.jsp"/>		
+			<forward name="wuxingZu10" path="/../jsp/ssc/play/wuxing_zuxuan_play_zu10.jsp"/>		
+			<forward name="wuxingZu5" path="/../jsp/ssc/play/wuxing_zuxuan_play_zu5.jsp"/>		
+			<forward name="wuxingZuchong2" path="/../jsp/ssc/play/wuxing_zuxuan_play_zuchong2.jsp"/>		
+			<forward name="wuxingZuchong3" path="/../jsp/ssc/play/wuxing_zuxuan_play_zuchong3.jsp"/>		
+			<forward name="wuxingZuchong4" path="/../jsp/ssc/play/wuxing_zuxuan_play_zuchong4.jsp"/>		
+					
+			<forward name="sixingFushi" path="/../jsp/ssc/play/sixing_play_fushi.jsp"/>			
+			<forward name="sixingZu24" path="/../jsp/ssc/play/sixing_zuxuan_play_zu24.jsp"/>
+			<forward name="sixingZu12" path="/../jsp/ssc/play/sixing_zuxuan_play_zu12.jsp"/>
+			<forward name="sixingZu6" path="/../jsp/ssc/play/sixing_zuxuan_play_zu6.jsp"/>
+			<forward name="sixingZu4" path="/../jsp/ssc/play/sixing_zuxuan_play_zu4.jsp"/>
+			
+					
+			<forward name="sixingDanshi" path="/../jsp/ssc/play/sixing_play_danshi.jsp"/>			
+			<forward name="sanxingZhixuanFushi" path="/../jsp/ssc/play/sanxing_zhixuan_play_fushi.jsp"/>			
+			<forward name="sanxingZhixuanDanshi" path="/../jsp/ssc/play/sanxing_zhixuan_play_danshi.jsp"/>		
+			<forward name="sanxingZhixuanZuheFushi" path="/../jsp/ssc/play/sanxing_zhixuan_play_zuhefushi.jsp"/>		
+			<forward name="sanxingZu3" path="/../jsp/ssc/play/sanxing_zuxuan_play_zu3.jsp"/>		
+			<forward name="sanxingZu6" path="/../jsp/ssc/play/sanxing_zuxuan_play_zu6.jsp"/>		
+			<forward name="sanxingBaodan" path="/../jsp/ssc/play/sanxing_zuxuan_play_baodan.jsp"/>		
+			<forward name="sanxingHezhi" path="/../jsp/ssc/play/sanxing_zuxuan_play_hezhi.jsp"/>		
+			<forward name="sanxingZuxuanDanshi" path="/../jsp/ssc/play/sanxing_zuxuan_play_danshi.jsp"/>		
+			<forward name="erxingZhixuanFushi" path="/../jsp/ssc/play/erxing_zhixuan_play_fushi.jsp"/>		
+			<forward name="erxingZhixuanDanshi" path="/../jsp/ssc/play/erxing_zhixuan_play_danshi.jsp"/>		
+			<forward name="erxingZuxuanFushi" path="/../jsp/ssc/play/erxing_zuxuan_play_fushi.jsp"/>		
+			<forward name="erxingZuxuanDanshi" path="/../jsp/ssc/play/erxing_zuxuan_play_danshi.jsp"/>		
+			<forward name="erxingZuxuanHezhi" path="/../jsp/ssc/play/erxing_zuxuan_play_hezhi.jsp"/>		
+			<forward name="yixingZhixuanFushi" path="/../jsp/ssc/play/yixing_zhixuan_play_fushi.jsp"/>		
+			<forward name="wuxingZuhe" path="/../jsp/ssc/play/zuhe_play_wuxing.jsp"/>		
+			<forward name="sixingZuhe" path="/../jsp/ssc/play/zuhe_play_sixing.jsp"/>		
+			<forward name="sanxingZuhe" path="/../jsp/ssc/play/zuhe_play_sanxing.jsp"/>		
+			<forward name="erxingZuhe" path="/../jsp/ssc/play/zuhe_play_erxing.jsp"/>		
+			<forward name="dxds" path="/../jsp/ssc/play/dxds_play_fushi.jsp"/>		
+			<forward name="renxuan1" path="/../jsp/ssc/play/renxuan1.jsp"/>		
+			<forward name="renxuan2" path="/../jsp/ssc/play/renxuan2.jsp"/>		
+			<forward name="renxuan3" path="/../jsp/ssc/play/renxuan3.jsp"/>		
+	</action>
+  </action-mappings>
+  <message-resources parameter="ApplicationResources.properties" />
+</struts-config>
+
