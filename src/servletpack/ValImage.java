@@ -1,14 +1,22 @@
 //import required classes
 package servletpack;
 
-import java.io.*;
-import java.awt.*;
-import java.awt.image.*;
-import java.util.*;
-import javax.imageio.*;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.util.Random;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
+import javax.imageio.ImageIO;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.sun.image.codec.jpeg.JPEGCodec;
+import com.sun.image.codec.jpeg.JPEGImageEncoder;
 
 
 public class ValImage extends HttpServlet
@@ -73,7 +81,9 @@ public class ValImage extends HttpServlet
 	g.dispose();
 
 //	 输出图象到页面
-	ImageIO.write(image, "JPEG", res.getOutputStream());
+	//ImageIO.write(image, "JPEG", res.getOutputStream());
+	JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(res.getOutputStream()); 
+	encoder.encode(image);
  }
  
 

@@ -92,6 +92,9 @@
     <servlet-name>Admin</servlet-name>
     <servlet-class>org.logicalcobwebs.proxool.admin.servlet.AdminServlet</servlet-class>
   </servlet>
+  
+
+  
   <servlet>
     <servlet-name>action</servlet-name>
     <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
@@ -330,6 +333,17 @@
     <load-on-startup>6</load-on-startup>
   </servlet>
   <!-- dwr Servlet Mapping-->
+  <!-- server time begin -->
+  <servlet>
+    <servlet-name>serverTime</servlet-name>
+    <servlet-class>com.onmyway.common.ServerTimeServlet</servlet-class>
+  </servlet>
+  
+    <servlet-mapping>
+    <servlet-name>serverTime</servlet-name>
+    <url-pattern>/servlet/serverTime</url-pattern>
+  </servlet-mapping>
+  
   <servlet-mapping>
     <servlet-name>dwr-invoker</servlet-name>
     <url-pattern>/dwr/*</url-pattern>

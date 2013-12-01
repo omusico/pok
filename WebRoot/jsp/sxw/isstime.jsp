@@ -12,12 +12,10 @@
 <link href="/pokercss/main.css" rel="stylesheet" type="text/css" />
 
 <script type='text/javascript' src='/dwr/interface/ServerTime.js'></script>
-<script type='text/javascript' src='/dwr/engine.js'></script>
-<script type='text/javascript' src='/dwr/util.js'></script>
+<script type='text/javascript' src='/dwr/engine.js'></script> 
 
 <script src="/pokerfunc/global.js" type="text/javascript"></script>
 <script src="/pokerfunc/glotime.js" type="text/javascript"></script>
-<script src="/jsp/sxw/js/sxw_timerun.js" type="text/javascript"></script>
 
 <style type="text/css">
 .image6 { background: url(/pkimages/mainimages/indimage6.gif) repeat-x top;margin:0px;}
@@ -32,6 +30,7 @@
     <INPUT TYPE="HIDDEN" NAME="stimehour" VALUE="<%=objServerTime.getHour()%>">
     <INPUT TYPE="HIDDEN" NAME="stimeminute" VALUE="<%=objServerTime.getMinute()%>">
     <INPUT TYPE="HIDDEN" NAME="stimesecond" VALUE="<%=objServerTime.getSecond()%>">
+    <INPUT TYPE="HIDDEN" id="serverMilliSeconds" NAME="serverMilliSeconds" VALUE="<%=System.currentTimeMillis()%>">
     
     
 <%//IssConInfo objICI=new IssConInfo();
@@ -67,3 +66,4 @@
 
 </body>
 </html>
+<script src="/jsp/sxw/js/sxw_timerun.js" type="text/javascript"></script>

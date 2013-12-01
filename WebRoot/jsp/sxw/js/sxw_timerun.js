@@ -1,5 +1,6 @@
 var serverTimeParse;
 
+
 var intBeginDate;
 var intBeginIssue;
 var intBeginTime;
@@ -10,7 +11,8 @@ var intHMIss;
 function timeLoad(){
   initPar();
   getServerTimeParse();
-  showservertime();
+ // showservertime();
+  showservertime_oooo();
 }
 function initPar(){
   //alert("initPar");
@@ -27,6 +29,7 @@ function initPar(){
 }
 function getServerTimeParse()
 {//取服务器时间后解析
+	/*
     var sTYear = document.all("stimeyear");
     var sTMonth = document.all("stimemonth");
     var sTDay = document.all("stimeday");
@@ -34,10 +37,13 @@ function getServerTimeParse()
 	var sTMinute = document.all("stimeminute");
 	var sTSecond = document.all("stimesecond");
 	var serverTime = new Date(sTYear.value,sTMonth.value,sTDay.value,sTHour.value,sTMinute.value,sTSecond.value);
-    serverTimeParse = Date.parse(serverTime);
+    */
+	serverTimeParse = $("#serverMilliSeconds").val();
+	//serverTimeParse = Date.parse(serverTime);
 	return;
 }
 //显示服务器时间
+/*
 function showservertime_old()
 {
 //	alert("ssc_timerun.js");
@@ -84,26 +90,97 @@ function showservertime_old()
 	setTimeout("showservertime()",1000);
 	return;
 }
-
+*/
+var timeFunctionId;
 //显示服务器时间
-function showservertime(){
- 	 ServerTime.getServerTime(function(serverTime){callShowservertime(serverTime);});
+function showservertime_oooo(){
+ //	 ServerTime.getServerTime(function(serverTime){
+	 /* dwr
+ 	 ServerTime.getServerMillisTime(function(serverTime){
+		// alert(serverTime);
+		 serverTimeParse = serverTime;
+		 showservertime();
+		// callShowservertime(serverTime);
+	});
+	*/
+ //alert("ajax");
+
+ $.ajax({
+		type: "post",
+		url: "/servlet/serverTime?method=long",
+		dataType: "json",
+		success: function(data){
+			//alert(data);
+			 serverTimeParse = data;
+			 clearInterval(timeFunctionId);
+		     showservertime();
+		}
+	});
+	//alert("showservertime_oooo="+timeFunctionId);
+
+   
+	setTimeout("showservertime_oooo()",1000*30);
 }
 
 
-function callShowservertime(serverTime){
 
+
+ //设置服务器时间
+//function callShowservertime(serverTime){
+function showservertime(){
 	//alert(serverTime);
+	/*
 	var  nowYear =  serverTime[0];
 	var  nowMonth =  serverTime[1];
 	var  nowDay =  serverTime[2];
 	var  nowHour =  serverTime[3];
 	var  nowMinute =  serverTime[4];
 	var  nowSecond =  serverTime[5];
+*/
+//alert(serverTimeParse);
+	var dateparse = new Date (serverTimeParse);
+	var serverYear = dateparse.getFullYear();
+	var serverMonth = dateparse.getMonth()+1;
+	var serverDate = dateparse.getDate();
+	var serverHour = dateparse.getHours();
+	var serverMinute = dateparse.getMinutes();
+	var serverSecond = dateparse.getSeconds();
 
+    var  nowYear = serverYear;
+	var  nowMonth =  serverMonth;
+	var  nowDay =  serverDate;
+	var  nowHour =  serverHour;
+	var  nowMinute = serverMinute;
+	var  nowSecond = serverSecond;
 
 	//serverTimeParse = Date.parse( new Date(nowYear,nowMonth,nowDay,nowHour,nowMinute,nowSecond));
-	serverTimeParse = new Date(nowYear,nowMonth,nowDay,nowHour,nowMinute,nowSecond);
+	//serverTimeParse = new Date(nowYear,nowMonth,nowDay,nowHour,nowMinute,nowSecond);
+	//serverTimeParse = new Date(nowYear,nowMonth,nowDay,nowHour,nowMinute,nowSecond);//服务器
+/****************begin************************** 
+	var clientTime = new Date();
+	var clientYear = clientTime.getFullYear();
+	var clientMonth = clientTime.getMonth()+1;
+	var clientDate = clientTime.getDate();
+	var clientHour = clientTime.getHours();
+	var clientMinute = clientTime.getMinutes();
+	var clientSecond = clientTime.getSeconds();
+
+	var sDate=( nowYear+"-" + nowMonth+"-" + nowDay+" " + nowHour+"-" + nowMinute+"-" + nowSecond);
+	var cDate=( clientYear+"-" + clientMonth+"-" + clientDate+" " + clientHour+"-" + clientMinute+"-" + clientSecond);
+    var parseDate=( serverYear+"-" + serverMonth+"-" + serverDate+" " + serverHour+"-" + serverMinute+"-" + serverSecond);
+
+ 	alert(serverTimeParse+";;;;" + clientTime+"\n server=" + sDate + "\n client=" + cDate
+		 + "\n parseDate="  + parseDate + "\n  diff=" + (serverTimeParse - clientTime));
+	
+    var tempNowDate = new Date();
+    var tempDiff = (tempNowDate - sDate); 
+    serverTimeParse.setMilliseconds(clientBeginDate.getMilliseconds() + tempDiff);  
+    clientBeginDate = tempNowDate; 
+
+ 	alert(serverTimeParse+";;;;" + clientTime+"\n server=" + sDate + "\n client=" + cDate
+		 + "\n diff=" + (serverTimeParse - clientTime));
+**************end***************************/
+
 	/*
 	//alert(serverTimeParse);
 	alert(nowYear+"-"+nowMonth+"-"+nowDay);
@@ -119,7 +196,8 @@ function callShowservertime(serverTime){
 	
 	alert(serverYear+","+serverMonth+","+serverDate);
 	*/
-	var pageTimeShow= document.all("servertime");
+	//var pageTimeShow= document.all("servertime");
+	//alert($("#servertime").html()+"," + $("#servertime").text());
     var curIssueWagShow= document.all("currentIssueShow");
     var issueStateShow=document.all("issueStateShow");
     var countDownWagShow= document.all("remainsecond");
@@ -146,13 +224,13 @@ function callShowservertime(serverTime){
 	var serCurSec=nowHour*60*60+nowMinute*60+nowSecond;//+销售时间提前10s;-销售时间滞后
 	serCurSec = eval(serCurSec+(offsetFlag + offsetTime));
 
-
-
 	var strHMS=formatNum(nowHour)+":"+formatNum(nowMinute)+":"+formatNum(nowSecond);
     var strYMD=nowYear+"-"+formatNum(nowMonth)+"-"+formatNum(nowDay);
 
-	pageTimeShow.innerHTML = nowYear+"年"+formatNum(nowMonth)+"月"+formatNum(nowDay)+"日 "+strHMS;
-
+	//pageTimeShow.innerHTML = nowYear+"年"+formatNum(nowMonth)+"月"+formatNum(nowDay)+"日 "+strHMS;
+	//设置页面上的服务器时间
+	var tempPageServerTime = nowYear+"年"+formatNum(nowMonth)+"月"+formatNum(nowDay)+"日 "+strHMS;
+    $("#servertime").html(tempPageServerTime)
 		//alert("timerun.js:strYMD="+strYMD+",intBeginDate="+intBeginDate);
 	//alert(strYMD + ",intBeginDate="+intBeginDate);
 	if(strYMD!=intBeginDate){
@@ -160,7 +238,6 @@ function callShowservertime(serverTime){
 	  issueStateShow.innerHTML="今天停止销售";
 	}else{
 		//alert("test");
-
 	  caculTime(intBeginIssue,intBeginTime,intSellSecond,intDayIssueTimes,intHMIss,serCurSec,curIssueWagShow,issueStateShow,countDownWagShow);
     }
 	//当为时时彩时，进行多期投注的计算
@@ -173,7 +250,8 @@ function callShowservertime(serverTime){
       hasMulIss(intSellSecond);
       hasSelling();
     }
-	setTimeout("showservertime()",1000);
+	serverTimeParse = serverTimeParse + 1000;
+ 	timeFunctionId = setTimeout("showservertime()",1000);
 	return;
 }
 
